@@ -146,6 +146,7 @@ $(document).ready(function () {
   });
 });
 
+//
 function performAction1() {
   // Add your code for the Pay for Order action here
   // For demonstration purposes, let's display an alert message
@@ -253,7 +254,7 @@ $("#submit-button").on("click", function () {
   };
 
   // Create an array to store the orders
-  var orders = [];
+  var orders = JSON.parse(localStorage.getItem("orders"));
 
   // Add the order to the array
   orders.push(order);
